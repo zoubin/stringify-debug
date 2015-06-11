@@ -1,0 +1,24 @@
+{
+  "name": "stringify-debug",
+  "version": "0.0.1",
+  "description": "wrapper for debug, stringify object",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoubin/stringify-debug.git"
+  },
+  "keywords": [
+    "debug",
+    "stringify"
+  ],
+  "author": "zoubin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoubin/stringify-debug/issues"
+  },
+  "homepage": "https://github.com/zoubin/stringify-debug#readme",
+  "dependencies": {
+    "arrayify-slice": "^1.0.0",
+    "debug": "^2.2.0"
+  }
+}
