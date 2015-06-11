@@ -1,6 +1,6 @@
 {
   "name": "stringify-debug",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "wrapper for debug, stringify object",
   "main": "index.js",
   "repository": {
