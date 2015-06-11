@@ -5,13 +5,12 @@ module.exports = function () {
     var orig = debug.apply(null, arguments);
     return function () {
         var args = arrayify(arguments)
-            .filter(isNotUndefined)
             .map(function (info) {
                 if (info && typeof info === 'object') {
                     return JSON.stringify(info);
                 }
                 if (typeof info === 'function') {
-                    return info.name;
+                    return '[function]' + info.name;
                 }
                 return info;
             });
@@ -19,6 +18,3 @@ module.exports = function () {
     };
 };
 
-function isNotUndefined(v) {
-    return typeof v !== 'undefined';
-}
