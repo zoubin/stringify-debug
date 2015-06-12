@@ -10,7 +10,7 @@ module.exports = function () {
                     return JSON.stringify(info);
                 }
                 if (typeof info === 'function') {
-                    return '[function]' + info.name;
+                    return '[Function: ' + info.name + ']';
                 }
                 return info;
             });
